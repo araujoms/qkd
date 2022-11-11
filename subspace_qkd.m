@@ -1,4 +1,7 @@
 function K = subspace_qkd(v,k,d,m)
+%computes the key rate for the subspace protocol with subspaces of size k
+%in dimension d, for the isotropic state with visibility v,
+%and gauss-radau quadrature level m
 
 	p = v+(1-v)*k/d;
 	K = p*mub_qkd(v/p,k,m);

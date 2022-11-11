@@ -1,4 +1,7 @@
 function K = mub_qkd(v,d,m)
+%computes the key rate for the MUB protocol with the isotropic state
+%of dimension d, with visibility v, and gauss-radau quadrature level m
+
 
 	K = hae(v,d,m) - hab(v,d);
 	vt = v + (1-v)/d^2;

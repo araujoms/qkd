@@ -1,4 +1,6 @@
 function K = overlap_qkd(v,d,m)
+%computes the key rate for the overlap protocol with the isotropic state
+%of dimension d, with visibility v, and gauss-radau quadrature level m
 
 	K = hae(v,d,m) - hab(v,d);
 

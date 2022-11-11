@@ -4,7 +4,7 @@ function K = mehul_experiment_full()
 
 	d=3;
 	counts = data{d};
-	counts = 10*data{d}; %simulated data
+	%counts = 10*data{d}; %simulated data
 
 	dirty_counts = counts;
 	dirty_counts(dirty_counts == 0) = 1;
@@ -49,9 +49,9 @@ function K = mehul_experiment_full()
 	npars = length(f_exp);
 	zetaguess = sqrt(2*gammaincinv(1-alpha,npars/2));
 	zeta = 0.90*zetaguess; %with real data
-	zeta = 1.35*zetaguess; %with simulated data
+	%zeta = 1.35*zetaguess; %with simulated data
 	sigmastep = 0.0004; %with real data
-	sigmastep = 0.00004; %with simulated data
+	%sigmastep = 0.00004; %with simulated data
 	%confidence_region_metropolis(d,f_exp,sigma,zeta,sigmastep,base)
 
 	K = hae_mub_full(f_exp,sigma,zeta,d,8) - conditional_entropy(p(:,:,1));
