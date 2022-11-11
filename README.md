@@ -13,3 +13,5 @@ The main files are
  - [matej_experiment_subspace.m](https://github.com/araujoms/qkd/blob/main/matej_experiment_overlap.m): Computes the key rate for the time-bin entanglement experiment described in section 5.1 with the subspace protocol.
  - [mehul_experiment_full.m](https://github.com/araujoms/qkd/blob/main/mehul_experiment_full.m): Computes the key rate for the pixel entanglement experiment described in section 5.1 with the full MUB protocol.
  - [mehul_experiment_restricted.m](https://github.com/araujoms/qkd/blob/main/mehul_experiment_full.m): Computes the key rate for the pixel entanglement experiment described in section 5.1 with the restricted MUB protocol.
+ 
+Additionaly, the "helpers" folder contains auxilliary functions needed to run the main code.
